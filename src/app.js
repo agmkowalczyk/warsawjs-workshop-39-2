@@ -4,6 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var session = require('express-session');
+require('./pubsub/mailer');
 
 var indexRouter = require('./routes/index');
 var carsRouter = require('./routes/cars');
